@@ -144,9 +144,14 @@ html.has-scroll-smooth {
 	transition: all 1s;
 }
 
+
+.aboutustext {
+	transform: translateY(100%) translateX(0);
+}
+
 .onscreen {
 	opacity: 1;
 	filter: blur(0);
-	transform: translateX(0);
+	transform: translateX(0) translateY(0);
 }
 

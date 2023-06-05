@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import {
   Navbar,
   MobileNav,
@@ -12,6 +13,8 @@ import Image from "next/image";
 export default function Example() {
   const [openNav, setOpenNav] = useState(false);
 
+  const router = useRouter();
+
  
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row items-center lg:gap-6">
@@ -21,7 +24,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal nnav notonscreen"
       >
-        <a href="/" className="flex items-center nav_link">
+        <a className="flex items-center nav_link cursor-pointer" onClick={() => router.replace("/")}>
           HOME
         </a>
       </Typography>
@@ -31,7 +34,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal nnav notonscreen"
       >
-        <a href="/our-team" className="flex items-center nav_link">
+        <a className="flex items-center nav_link cursor-pointer" onClick={() => router.replace("/our-team")}>
           OUR TEAM
         </a>
       </Typography>
@@ -51,7 +54,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal nnav notonscreen"
       >
-        <a href="#" className="flex items-center nav_link">
+        <a className="flex items-center nav_link cursor-pointer" onClick={() => router.replace("/event")}>
           EVENT
         </a>
       </Typography>
