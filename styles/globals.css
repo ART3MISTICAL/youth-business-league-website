@@ -144,9 +144,17 @@ html.has-scroll-smooth {
 	transition: all 1s;
 }
 
+.nnav {
+	transform: translateY(-100%) translateX(0);
+}
+
+.up {
+	transform: translateY(100%) translateX(0);
+}
 
 .aboutustext {
 	transform: translateY(100%) translateX(0);
+	transition-delay: 500ms;
 }
 
 .onscreen {

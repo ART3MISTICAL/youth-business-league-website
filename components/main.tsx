@@ -17,7 +17,7 @@ const Main = () => {
 		<ParticlesBackground />
 		</div>
 		<div className="h-[100vh] w-full flex justify-center items-center overflow-hidden height">
-		<section className="absolute z-10 opacity-100 md:w-[500px] h-[250px] w-[250px] md:h-[500px] bg-[#021915] rounded-full transition-all ease-in duration-[2s] notonscreen">
+		<section className="absolute z-10 opacity-100 md:w-[500px] h-[250px] w-[250px] md:h-[500px] bg-[#021915] rounded-full notonscreen up">
 			<Image src="/logo.png" className='absolute z-10 opacity-100 transition-all ease-in duration-[2s]' width={500} height={500} alt="logo" />
 		</section>
 		</div>
