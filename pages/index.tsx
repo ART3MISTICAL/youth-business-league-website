@@ -7,6 +7,7 @@ import AboutUs from '@/components/about'
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useEffect, useRef } from "react";
 import Head from 'next/head'
+import AnimCursor from '@/components/AnimCursor'
 
 export default function Home() {
 	const ref = useRef(null);
@@ -37,7 +38,8 @@ export default function Home() {
 			Youth Business League
 		</title>
 	</Head>
-    <div className='bg-[#021915]'>
+	<AnimCursor/>
+    <div className='bg-[#021915] cursor-default'>
 	<LocomotiveScrollProvider options={options} containerRef={ref}>
       <main data-scroll-container ref={ref}>
 		

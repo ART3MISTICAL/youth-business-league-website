@@ -12,7 +12,7 @@
 
 html{
 	scroll-behavior: smooth;
-	/*cursor: none;*/
+	/*cursor: default;*/
   }
 
 
@@ -162,4 +162,3 @@ html.has-scroll-smooth {
 	filter: blur(0);
 	transform: translateX(0) translateY(0);
 }
-
