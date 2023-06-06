@@ -8,6 +8,7 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useEffect, useRef } from "react";
 import Head from 'next/head'
 import AnimCursor from '@/components/AnimCursor'
+import Vision from '@/components/vision'
 
 export default function Home() {
 	const ref = useRef(null);
@@ -44,8 +45,16 @@ export default function Home() {
       <main data-scroll-container ref={ref}>
 		
 		{/*<section data-scroll-sticky data-scroll-target="#stick">*/}
-		<section data-scroll-section>
+		<section data-scroll-section id='start'>
 				<Navbar />
+		</section>
+
+		<section data-scroll-sticky data-scroll-target="#stick">
+		<a href='#start' className='bg-white rounded-full absolute z-10 w-20 h-20 bottom-5 flex justify-center items-center cursor-pointer notonscreen up right-10' data-scroll-to data-scroll-target="#start">
+				<div>
+					Up
+				</div>
+			</a>
 		</section>
 	
 		<section data-scroll-section>
@@ -54,6 +63,10 @@ export default function Home() {
 		
 		<section data-scroll-section>
 			<AboutUs />
+		</section>
+
+		<section data-scroll-section>
+			<Vision />
 		</section>
 		
 		<section data-scroll-section>

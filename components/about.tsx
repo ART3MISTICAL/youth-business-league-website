@@ -17,7 +17,7 @@ const AboutUs = () => {
 			</div>*/}
 		</div>
 		<div className="h-[100vh] flex z-[0] bg-[#021915]" id="aboutus">
-			<div className="w-full h-full flex flex-col justify-center items-center z-10">
+			<div className="w-full h-full flex flex-col justify-center items-center z-10 relative">
 				<div className="w-[90vw] h-full flex flex-col justify-center items-center mb-[60px] mt-[30px] text-white rounded-3xl">
 					<div className="text-[#fff] font-bold text-[30px] lg:text-[50px] lg:pl-[8vw]" data-scroll data-scroll-direction="horizontal" data-scroll-speed="5">
 						Well, Hello There!
@@ -34,6 +34,11 @@ Join our league of game-changers and boundary-breakers rewriting the entrepreneu
 Be it creating a Revolution and Challenging the Status quo; Be it unleashing your potential, and turning your dreams into your reality... YBL is to provide fuel to the fire that burns within you every step of the way!
 					</div>
 				</div>
+				<a href='#vision' className='bg-white rounded-full absolute z-10 w-20 h-20 bottom-5 flex justify-center items-center cursor-pointer notonscreen up' data-scroll-to data-scroll-target="#vision">
+				<div>
+					Button
+				</div>
+			</a>
 			</div>
 		</div>
 		</>

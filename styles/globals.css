@@ -115,7 +115,7 @@ html.has-scroll-smooth {
 		transform: scaleY(1.3); 
   }
   
-  .c-scrollbar_thumb {
+  /*.c-scrollbar_thumb {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -126,7 +126,7 @@ html.has-scroll-smooth {
 	margin: 2px;
 	cursor: -webkit-grab;
 	cursor: grab; 
-  }
+  }*/
 	.has-scroll-dragging .c-scrollbar_thumb {
 	  cursor: -webkit-grabbing;
 	  cursor: grabbing; 
@@ -144,6 +144,8 @@ html.has-scroll-smooth {
 	transition: all 1s;
 }
 
+
+
 .nnav {
 	transform: translateY(-100%) translateX(0);
 }
@@ -151,6 +153,13 @@ html.has-scroll-smooth {
 .up {
 	transform: translateY(100%) translateX(0);
 	transition-delay: 500ms;
+}
+
+.vision {
+	filter: blur(0);
+	opacity: 1;
+	transform: translateY(0) translateX(0);
+	transition-delay: 1s;
 }
 
 .aboutustext {
@@ -162,4 +171,9 @@ html.has-scroll-smooth {
 	opacity: 1;
 	filter: blur(0);
 	transform: translateX(0) translateY(0);
+}
+
+.vision.onscreen {
+	opacity: 0.4;
+	/*transform: translateY(0) translateX(0);*/
 }
