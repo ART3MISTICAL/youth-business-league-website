@@ -20,6 +20,11 @@ const Main = () => {
 		<section className="absolute z-10 opacity-100 md:w-[500px] h-[250px] w-[250px] md:h-[500px] bg-[#021915] rounded-full notonscreen up">
 			<Image src="/logo.png" className='absolute z-10 opacity-100 transition-all ease-in duration-[2s]' width={500} height={500} alt="logo" />
 		</section>
+			<a href='#who' className='bg-white rounded-full absolute z-10 w-20 h-20 bottom-5 flex justify-center items-center cursor-pointer notonscreen up' data-scroll-to data-scroll-target="#who">
+				<div>
+					Button
+				</div>
+			</a>
 		</div>
 		</>
 	)

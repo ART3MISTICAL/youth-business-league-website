@@ -39,7 +39,7 @@ export default function Home() {
 		</title>
 	</Head>
 	<AnimCursor/>
-    <div className='bg-[#021915] cursor-default'>
+    <div className='bg-[#021915]'>
 	<LocomotiveScrollProvider options={options} containerRef={ref}>
       <main data-scroll-container ref={ref}>
 		

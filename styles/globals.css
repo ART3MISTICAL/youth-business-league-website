@@ -150,6 +150,7 @@ html.has-scroll-smooth {
 
 .up {
 	transform: translateY(100%) translateX(0);
+	transition-delay: 500ms;
 }
 
 .aboutustext {
