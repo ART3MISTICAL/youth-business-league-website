@@ -45,19 +45,19 @@ export default function Home() {
       <main data-scroll-container ref={ref}>
 		
 		{/*<section data-scroll-sticky data-scroll-target="#stick">*/}
-		<section data-scroll-section id='start'>
+		<section data-scroll-sticky data-scroll-target="#stick">
 				<Navbar />
 		</section>
 
-		<section data-scroll-sticky data-scroll-target="#stick">
+		{/*<section data-scroll-sticky data-scroll-target="#stick">
 		<a href='#start' className='bg-white rounded-full absolute z-10 w-20 h-20 bottom-5 flex justify-center items-center cursor-pointer notonscreen up right-10' data-scroll-to data-scroll-target="#start">
 				<div>
 					Up
 				</div>
 			</a>
-		</section>
+		</section>*/}
 	
-		<section data-scroll-section>
+		<section data-scroll-section id='start'>
           <Main />
         </section>
 		

@@ -24,7 +24,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal nnav notonscreen"
       >
-        <a className="flex items-center nav_link cursor-pointer" onClick={() => router.replace("/")}>
+        <a href="#start" className="flex items-center nav_link cursor-pointer" data-scroll-to data-scroll-target="#start">
           HOME
         </a>
       </Typography>
@@ -34,8 +34,30 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal nnav notonscreen"
       >
-        <a className="flex items-center nav_link cursor-pointer" onClick={() => router.replace("/our-team")}>
-          OUR TEAM
+        <a href="#who" className="flex items-center nav_link cursor-pointer" data-scroll-to data-scroll-target="#who">
+          ABOUT US
+        </a>
+      </Typography>
+
+	  <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal nnav notonscreen"
+      >
+        <a href="#vision" className="flex items-center nav_link cursor-pointer" data-scroll-to data-scroll-target="#vision">
+          OUR VISION
+        </a>
+      </Typography>
+
+	  <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal nnav notonscreen"
+      >
+        <a href="#who" className="flex items-center nav_link cursor-pointer" data-scroll-to data-scroll-target="#who">
+          WHAT WE DO
         </a>
       </Typography>
 	  {/*<Typography
@@ -48,16 +70,7 @@ export default function Example() {
           WHAT WE DO
         </a>
       </Typography>*/}
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal nnav notonscreen"
-      >
-        <a className="flex items-center nav_link cursor-pointer" onClick={() => router.replace("/event")}>
-          EVENT
-        </a>
-      </Typography>
+      
       {/*<Typography
         as="li"
         variant="small"
@@ -71,8 +84,8 @@ export default function Example() {
     </ul>
   );
 
-  let classes = 'inset-0 z-[0] bg-[#021915] w-[100%] navbar'
-  let classes2 = "z-[1] bg-[#021915] mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 navbar"
+  let classes = 'sticky inset-0 z-[10] bg-[#021915] w-[100%] navbar'
+  let classes2 = "sticky z-[10] bg-[#021915] mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 navbar"
   let classes3 = "flex items-center gap-2 md:w-1/3 lg:hidden";
   let classList = classes3.split(' ');
 
@@ -88,7 +101,7 @@ export default function Example() {
 	  	<Image src="/logo.png" alt="logo" width={50} height={100} />
 		<Typography
           as="a"
-          href="#"
+          href="/"
           className="mr-4 cursor-pointer py-1.5 font-[Bellefair]"
         >
           YOUTH BUSINESS LEAGUE
