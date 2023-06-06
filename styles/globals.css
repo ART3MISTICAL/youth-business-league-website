@@ -177,3 +177,27 @@ html.has-scroll-smooth {
 	opacity: 0.4;
 	/*transform: translateY(0) translateX(0);*/
 }
+
+.move-area{/*normally use body*/
+	width: 100vw;
+	height: 100vh;
+	padding: 10% 45%;
+  }
+  .eye {
+	position: relative;
+	display: inline-block;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	background: #CCC;
+  }
+  .eye:after { /*pupil*/
+	position: absolute;
+	bottom: 17px;
+	right: 10px;
+	width: 10px;
+	height: 10px;
+	background: #000;
+	border-radius: 50%;
+	content: " ";
+  }
