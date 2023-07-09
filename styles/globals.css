@@ -51,10 +51,15 @@ body {
 	height: calc(100vh - 68px);
 }
 
-html.has-scroll-smooth {
-	overflow: hidden; 
+html {
+	overflow-x: hidden;
+	scroll-snap-type: y mandatory;
   }
-  
+
+section {
+	scroll-snap-align: start;
+}
+
   html.has-scroll-dragging {
 	-webkit-user-select: none;
 	-moz-user-select: none;

@@ -4,7 +4,6 @@ import Navbar from '@/components/navbar'
 import Main from '@/components/main'
 import Text from '@/components/text'
 import AboutUs from '@/components/about'
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useEffect, useRef } from "react";
 import Head from 'next/head'
 import AnimCursor from '@/components/AnimCursor'
@@ -41,29 +40,28 @@ export default function Home() {
 	</Head>
 	<AnimCursor/>
     <div className='bg-[#021915]'>
-	<LocomotiveScrollProvider options={options} containerRef={ref}>
-      <main data-scroll-container ref={ref}>
-		
 		{/*<section data-scroll-sticky data-scroll-target="#stick">*/}
-		<section data-scroll-sticky data-scroll-target="#stick">
-				<Navbar />
-		</section>
 
-		{/*<section data-scroll-sticky data-scroll-target="#stick">
-		<a href='#start' className='bg-white rounded-full absolute z-10 w-20 h-20 bottom-5 flex justify-center items-center cursor-pointer notonscreen up right-10' data-scroll-to data-scroll-target="#start">
+		<section>
+		<div data-scroll-sticky data-scroll-target="#stick" id='start'>
+				<Navbar />
+		</div>
+
+		<div data-scroll-sticky data-scroll-target="#stick">
+		<a href='#start' className='bg-white rounded-full fixed z-[100] w-20 h-20 bottom-5 flex justify-center items-center cursor-pointer notonscreen up right-10' data-scroll-to data-scroll-target="#start">
 				<div>
 					Up
 				</div>
 			</a>
-		</section>*/}
+		</div>
 	
-		<section data-scroll-section id='start'>
-          <Main />
-        </section>
+		<Main/>
 		
-		<section data-scroll-section>
-			<AboutUs />
 		</section>
+		
+		{/*<section data-scroll-section>*/}
+			<AboutUs />
+		{/*</section>*/}
 
 		<section data-scroll-section>
 			<Vision />
@@ -73,8 +71,6 @@ export default function Home() {
 			<Text />
 		</section>
 		
-		</main>
-	</LocomotiveScrollProvider>
 	</div>
 	</>
   )

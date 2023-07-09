@@ -3,19 +3,25 @@ import React from "react";
 const AboutUs = () => {
 	return (
 		<>
-		<div className="h-[100vh] flex z-[0] text-center bg-[#021915] relative justify-center" id="who">
-			<section className="text-[#fff] font-bold flex flex-col justify-center items-center w-[100vw] text-[15vh] lg:text-[350px] cursor-default" data-scroll data-scroll-direction="horizontal" data-scroll-speed="9">
+		<section className="h-[100vh] flex z-[0] text-center bg-[#021915] relative justify-center" id="who">
+			<div className="text-[#fff] font-bold flex flex-col justify-center items-center w-[100vw] text-[15vh] lg:text-[350px] cursor-default" data-scroll data-scroll-direction="horizontal" data-scroll-speed="9">
+				<div className="notonscreen">
 				WHO
-			</section>
+				</div>
+
+				</div>
+			
 			<a href='#aboutus' className='bg-white rounded-full absolute z-10 w-20 h-20 bottom-5 flex justify-center items-center cursor-pointer notonscreen up' data-scroll-to data-scroll-target="#aboutus">
 				<div>
 					Button
 				</div>
 			</a>
+			
 			{/*<div className="text-[#fff] font-bold flex flex-col justify-center items-center w-[100vw] text-[15vh] lg:hidden">
 				WHO
 			</div>*/}
-		</div>
+		</section>
+		<section>
 		<div className="h-[100vh] flex z-[0] bg-[#021915]" id="aboutus">
 			<div className="w-full h-full flex flex-col justify-center items-center z-10 relative">
 				<div className="w-[90vw] h-full flex flex-col justify-center items-center mb-[60px] mt-[30px] text-white rounded-3xl">
@@ -41,6 +47,7 @@ Be it creating a Revolution and Challenging the Status quo; Be it unleashing you
 			</a>
 			</div>
 		</div>
+		</section>
 		</>
 	)
 }

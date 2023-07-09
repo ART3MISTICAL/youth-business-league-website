@@ -24,12 +24,12 @@ const Vision = () => {
 			<div className="text-center text-white font-bold bg-blend-overlay cursor-default text-[7vh] lg:text-[30vh] opacity-40 vision notonscreen absolute z-0">
 				Our Vision
 			</div>
-			<section className="move-area">
+			<div className="move-area">
   				<div className="flex items-center justify-center">
     			<div className='eye'></div>
     			<div className='eye'></div>
   				</div>
-			</section>
+			</div>
 		</div>
 		</>
 	)
