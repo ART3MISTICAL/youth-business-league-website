@@ -11,6 +11,14 @@ const Vision = () => {
 				Our Vision
 			</div>
 
+			<div className="text-center text-white lg:text-[2vh] font-bold">
+			Our vision is to transform India into a hub of entrepreneurial excellence, where young minds become catalysts for economic growth and social development.
+			</div>
+
+			<div className="text-center text-white lg:text-[2vh] font-bold">
+				We strive to create an ecosystem that nurtures innovation, embraces diversity, and empowers the next generation of visionary leaders.
+			</div>
+
 		</div>
 		</>
 	)
