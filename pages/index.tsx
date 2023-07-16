@@ -8,6 +8,7 @@ import { useEffect, useRef } from "react";
 import Head from 'next/head'
 import AnimCursor from '@/components/AnimCursor'
 import Vision from '@/components/vision'
+import What from '@/components/what'
 
 export default function Home() {
 	const ref = useRef(null);
@@ -43,11 +44,11 @@ export default function Home() {
 		{/*<section data-scroll-sticky data-scroll-target="#stick">*/}
 
 		<section>
-		<div data-scroll-sticky data-scroll-target="#stick" id='start'>
+		<div id='start'>
 				<Navbar />
 		</div>
 
-		<div data-scroll-sticky data-scroll-target="#stick">
+		<div >
 		<a href='#start' className='bg-white rounded-full fixed z-[100] w-20 h-20 bottom-5 flex justify-center items-center cursor-pointer notonscreen up right-10' data-scroll-to data-scroll-target="#start">
 				<div>
 					Up
@@ -68,7 +69,7 @@ export default function Home() {
 		</section>
 		
 		<section data-scroll-section>
-			<Text />
+			<What />
 		</section>
 		
 	</div>

@@ -56,7 +56,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal nnav notonscreen"
       >
-        <a href="#who" className="flex items-center nav_link cursor-pointer" data-scroll-to data-scroll-target="#who">
+        <a href="#what" className="flex items-center nav_link cursor-pointer" data-scroll-to data-scroll-target="#who">
           WHAT WE DO
         </a>
       </Typography>

@@ -11,10 +11,10 @@ const AboutUs = () => {
 
 				</div>
 			
-			<a href='#aboutus' className='bg-white rounded-full absolute z-10 w-20 h-20 bottom-5 flex justify-center items-center cursor-pointer notonscreen up' data-scroll-to data-scroll-target="#aboutus">
-				<div>
-					Button
-				</div>
+			<a href='#aboutus' className='bg-[#021915] rounded-full absolute z-10 w-16 h-16 bottom-5 flex justify-center items-center cursor-pointer notonscreen up border-[1.5px] border-[#f7aa1b] hover:border-[#021915] hover:bg-[#f7aa1b] text-[#f7aa1b] hover:text-[#021915]'>
+			{/*<IconButton color="blue" size="lg" variant="gradient" className="rounded-full absolute z-10 w-20 h-20 bottom-5">*/}
+				<i className="fa-sharp fa-solid fa-arrow-down "></i>
+      		{/*</IconButton>*/}
 			</a>
 			
 			{/*<div className="text-[#fff] font-bold flex flex-col justify-center items-center w-[100vw] text-[15vh] lg:hidden">
@@ -41,10 +41,10 @@ We ignite the spark of inspiration and empower the next generation of visionary 
 
 					</div>
 				</div>
-				<a href='#vision' className='bg-white rounded-full absolute z-10 w-20 h-20 bottom-5 flex justify-center items-center cursor-pointer notonscreen up' data-scroll-to data-scroll-target="#vision">
-				<div>
-					Button
-				</div>
+				<a href='#vision' className='bg-[#021915] rounded-full absolute z-10 w-16 h-16 bottom-5 flex justify-center items-center cursor-pointer notonscreen up border-[1.5px] border-[#f7aa1b] hover:border-[#021915] hover:bg-[#f7aa1b] text-[#f7aa1b] hover:text-[#021915]'>
+			{/*<IconButton color="blue" size="lg" variant="gradient" className="rounded-full absolute z-10 w-20 h-20 bottom-5">*/}
+				<i className="fa-sharp fa-solid fa-arrow-down "></i>
+      		{/*</IconButton>*/}
 			</a>
 			</div>
 		</div>
