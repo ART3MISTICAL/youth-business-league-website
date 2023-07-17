@@ -5,26 +5,27 @@ const Contact = () => {
 
 	return (
 		<div className="ct-form absolute z-40">
-		<h2 className="heading">
+		<h2 className="heading notonscreen">
 	Contact Us
 </h2>
 		<div className="contact">
 <form className="forms" action="https://formsubmit.co/dev.marvel.avengers@gmail.com" method="post" autoComplete="off">
 		
-	<label htmlFor="name" >Your Name</label>
-	<input type="text" name="name" className="input rounded-lg" placeholder="Your Name" required />
+	<label className="notonscreen delay-100" htmlFor="name" >Your Name</label>
+	<input type="text" name="name" className="input rounded-lg notonscreen delay-100" placeholder="Your Name" required />
 
-	<label htmlFor="email">Email</label>
-	<input type="email" className="input rounded-lg" name="email" placeholder="Email" required />
+	<label className="notonscreen delay-300" htmlFor="email">Email</label>
+	<input type="email" className="input rounded-lg notonscreen delay-300" name="email" placeholder="Email" required />
 
-	<label htmlFor="message">Message</label>
-	<textarea name="message" className="rounded-lg" placeholder="Message" required />
+	<label className="notonscreen delay-500" htmlFor="message">Message</label>
+	<textarea name="message" className="rounded-lg notonscreen delay-500" placeholder="Message" required />
 	{/*</textarea required>*/}
 
-	<input className="input rounded-lg" type="submit" value="Submit"/>
+	<input className="input rounded-lg notonscreen delay-700" type="submit" value="Submit"/>
 
 </form>
 </div>
+
 </div>
 	)
 }

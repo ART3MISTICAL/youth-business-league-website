@@ -50,6 +50,16 @@ const Footer = () => {
               What We Do
             </Typography>
           </li>
+		  <li>
+            <Typography
+              as="a"
+              href="#contact"
+              color="white"
+              className="font-normal transition-colors hover:text-[#f7aa1b] focus:text-[#f7aa1b]"
+            >
+              Contact Us
+            </Typography>
+          </li>
         </ul>
       </div>
       <hr className="my-8 border-white-50" />
