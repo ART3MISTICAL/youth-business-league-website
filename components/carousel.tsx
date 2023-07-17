@@ -23,8 +23,8 @@ const Carousel = ({ items }: CarouselProps) => {
   };
 
   return (
-    <div className="relative h-[30vh]">
-      <img className="w-full" src={items[activeIndex].image} alt={items[activeIndex].title}  />
+    <div className="relative rounded-lg h-[30vh]">
+      <img className="w-full h-[60vh] rounded-lg" src={items[activeIndex].image} alt={items[activeIndex].title}  />
       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
         <div className="bg-gray-900 bg-opacity-50 p-4">
           <h2 className="text-white text-2xl font-bold mb-2">{items[activeIndex].title}</h2>

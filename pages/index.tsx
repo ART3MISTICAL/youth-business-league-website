@@ -49,13 +49,13 @@ export default function Home() {
 				<Navbar />
 		</div>
 
-		<div >
+		{/*<div >
 		<a href='#start' className='bg-white rounded-full fixed z-[100] w-20 h-20 bottom-5 flex justify-center items-center cursor-pointer notonscreen up right-10' data-scroll-to data-scroll-target="#start">
 				<div>
 					Up
 				</div>
 			</a>
-		</div>
+		</div>*/}
 	
 		<Main/>
 		
