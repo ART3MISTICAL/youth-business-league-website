@@ -71,16 +71,16 @@ export default function Example() {
         </a>
       </Typography>*/}
       
-      {/*<Typography
+      <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal nnav notonscreen"
       >
-        <a href="#" className="flex items-center nav_link">
+        <a href="#contact" className="flex items-center nav_link">
           CONTACT US
         </a>
-      </Typography>*/}
+      </Typography>
     </ul>
   );
 

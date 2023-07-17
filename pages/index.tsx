@@ -10,6 +10,7 @@ import AnimCursor from '@/components/AnimCursor'
 import Vision from '@/components/vision'
 import What from '@/components/what'
 import Footer from '@/components/footer'
+import Contact from '@/components/contact'
 
 export default function Home() {
 	const ref = useRef(null);
@@ -73,9 +74,15 @@ export default function Home() {
 			<What />
 		</section>
 
+		<section className='w-[100vw] h-[100vh] flex justify-center items-center relative' id='contact'>
+			<Contact />
+		</section>
+
 		<section>
 			<Footer />
 		</section>
+
+		
 		
 	</div>
 	</>
