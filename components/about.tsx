@@ -3,7 +3,7 @@ import React from "react";
 const AboutUs = () => {
 	return (
 		<>
-		<section className="h-[100vh] flex z-[0] text-center bg-[#021915] relative justify-center" id="who">
+		<section className="h-[100vh] flex z-[0] text-center relative justify-center" id="who">
 			<div className="text-[#fff] font-bold flex flex-col justify-center items-center w-[100vw] text-[15vh] lg:text-[350px] cursor-default" data-scroll data-scroll-direction="horizontal" data-scroll-speed="9">
 				<div className="notonscreen">
 				WHO

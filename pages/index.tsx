@@ -9,6 +9,7 @@ import Head from 'next/head'
 import AnimCursor from '@/components/AnimCursor'
 import Vision from '@/components/vision'
 import What from '@/components/what'
+import Footer from '@/components/footer'
 
 export default function Home() {
 	const ref = useRef(null);
@@ -70,6 +71,10 @@ export default function Home() {
 		
 		<section data-scroll-section>
 			<What />
+		</section>
+
+		<section>
+			<Footer />
 		</section>
 		
 	</div>
