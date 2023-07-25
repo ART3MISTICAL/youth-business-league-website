@@ -84,7 +84,7 @@ section {
 	filter: blur(0);
 	opacity: 1;
 	transform: translateY(0) translateX(0);
-	transition-delay: 1s;
+	transition-delay: 0.5s;
 }
 
 .aboutustext {
@@ -110,7 +110,7 @@ section {
 .vision-1 {
 	opacity: 0;
 	transform: translateY(0) translateX(0);
-	transition-delay: 1s;
+	transition-delay: 0.5s;
 }
 
 .vision-2.onscreen {
@@ -120,7 +120,7 @@ section {
 .vision-2 {
 	opacity: 0;
 	transform: translateY(0) translateX(0);
-	transition-delay: 2.5s;
+	transition-delay: 1s;
 }
 
 /*.well.onscreen {
