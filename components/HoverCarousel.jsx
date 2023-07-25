@@ -1,11 +1,10 @@
-// utils/HoverCarousel.js
 import React, { useEffect } from "react";
 import $ from "jquery";
 
 const HoverCarousel = ({ images }) => {
   useEffect(() => {
-    // Original jQuery code for HoverCarousel
-    const scope = $(".carousel");
+
+		const scope = $(".carousel");
     const wrap = scope.find("ul").parent();
     let containerWidth = 0;
     let scrollWidth = 0;
@@ -33,7 +32,7 @@ const HoverCarousel = ({ images }) => {
 
       clearTimeout(animated);
       animated = setTimeout(() => {
-        wrap.css("scroll-behavior", "auto");
+        wrap.css("scroll-behavior", "smooth");
         animated = null;
       }, 200);
     };
