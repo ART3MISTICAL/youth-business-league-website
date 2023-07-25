@@ -4,7 +4,13 @@ export default function Document() {
   return (
     <Html lang="en">
 		
-      <Head />
+      <Head >
+	  <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-98ylrWmf8wT5PrnreN1dj6sTQ11S17KrAJ1SNHpQ6E0="
+            crossOrigin="anonymous"
+          ></script>
+	</Head >
 	  <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
