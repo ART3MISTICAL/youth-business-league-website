@@ -32,7 +32,7 @@ const HoverCarousel = ({ images }) => {
 
       clearTimeout(animated);
       animated = setTimeout(() => {
-        wrap.css("scroll-behavior", "smooth");
+        wrap.css("scroll-behavior", "auto");
         animated = null;
       }, 200);
     };
