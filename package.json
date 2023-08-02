@@ -15,6 +15,7 @@
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
     "gsap": "^3.11.5",
+    "hover-carousel": "^1.1.0",
     "jquery": "^3.7.0",
     "locomotive-scroll": "^4.1.4",
     "mouse-follower": "^1.1.2",

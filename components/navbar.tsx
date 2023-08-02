@@ -34,7 +34,7 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal nnav notonscreen"
       >
-        <a href="#who" className="flex items-center nav_link cursor-pointer" data-scroll-to data-scroll-target="#who">
+        <a href="#aboutus" className="flex items-center nav_link cursor-pointer" data-scroll-to data-scroll-target="#who">
           ABOUT US
         </a>
       </Typography>
@@ -71,16 +71,7 @@ export default function Example() {
         </a>
       </Typography>*/}
       
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal nnav notonscreen"
-      >
-        <a href="#contact" className="flex items-center nav_link">
-          CONTACT US
-        </a>
-      </Typography>
+      
     </ul>
   );
 

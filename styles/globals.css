@@ -60,6 +60,12 @@ section {
 	scroll-snap-align: start;
 }
 
+@media only screen and (max-width: 1200px){
+    html {
+		scroll-snap-type: none;
+	}
+}
+
 
 
 .notonscreen {
@@ -129,54 +135,63 @@ section {
 
 .forms {
 	width: 50%;
-  }
-  
-  .forms label {
+}
+
+@media (max-width: 767px) {
+	.forms {
+		width: 90%;
+	}
+}
+
+.forms label {
 	font-size: 1.2rem;
-  }
-  
-  .input,
-  textarea,
-  .btn {
+}
+
+.input,
+textarea,
+.btn {
 	width: 100%;
 	padding: 0.5em;
 	border: none;
 	font-size: 1.2rem;
 	color: black;
-  }
-  input[type="text"],
-  input[type="email"],
-  textarea {
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
 	margin: 0 0 1em;
 	border: 1px solid #ccc;
 	outline: none;
-  }
-  
-  textarea {
+}
+
+textarea {
 	height: 6em;
-  }
-  input[type="submit"],
-  .btn {
+}
+
+input[type="submit"],
+.btn {
 	background: #4570f3;
 	color: #fff;
 	cursor: pointer;
-  }
-  input[type="submit"]:hover,
-  .btn:hover {
+}
+
+input[type="submit"]:hover,
+.btn:hover {
 	background: #6c63e8;
-  }
-  label {
+}
+
+label {
 	color: white;
-  }
-  
-  .contact {
+}
+
+.contact {
 	display: flex;
 	justify-content: center;
 	padding-top: 10px;
-  }
-  
+}
 
-  .heading {
+.heading {
 	/*margin-top: 50px;*/
 	display: flex;
 	/*font-family: "Montserrat", sans-serif;*/
@@ -185,5 +200,4 @@ section {
 	color: whitesmoke;
 	text-decoration: none;
 	justify-content: center;
-  }
-  
+}

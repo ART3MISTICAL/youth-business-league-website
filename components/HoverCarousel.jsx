@@ -34,7 +34,7 @@ const HoverCarousel = ({ images }) => {
       animated = setTimeout(() => {
         wrap.css("scroll-behavior", "auto");
         animated = null;
-      }, 200);
+      }, 500);
     };
 
     const onMouseMove = (e) => {
