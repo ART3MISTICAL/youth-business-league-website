@@ -201,3 +201,33 @@ label {
 	text-decoration: none;
 	justify-content: center;
 }
+
+
+
+.marquee-container {
+	display: flex;
+	overflow: hidden;
+	animation: marquee 360s linear infinite;
+	white-space: nowrap;
+	padding: 40px;
+	padding-top: 0px;
+	width: 3000vw;
+	/*overflow: hidden;*/
+  }
+
+
+  .marquee-container img {
+	width: 300px; /* Adjust the width of the images as needed */
+	height: 200px;
+	margin-right: 10px; /* Add spacing between images */
+  }
+  
+  @keyframes marquee {
+	0% {
+	  transform: translateX(0%);
+	}
+	100% {
+	  transform: translateX(calc(-95%)); /* Adjust the percentage to control the speed */
+	}
+  }
+  

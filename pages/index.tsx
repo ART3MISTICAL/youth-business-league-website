@@ -90,7 +90,7 @@ export default function Home() {
 			<What />
 		</section>
 
-		<section className={`w-[100vw] flex justify-center items-center relative ${isDesktop ? "h-[100vh]" : "min-h-[60vh]"}`} id='contact'>
+		<section className={`w-[100vw] flex justify-center items-center relative ${isDesktop ? "h-[100vh]" : "min-h-[80vh]"}`} id='contact'>
 			<Contact />
 			
 		</section>

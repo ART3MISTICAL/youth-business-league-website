@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const AboutUs = () => {
+	const imageNames = ["1.JPG", "2.JPG", "3.JPG", "4.JPG", "5.JPG", "6.JPG", "7.JPG", "8.JPG", "9.JPG", "10.JPG", "11.JPG", "12.JPG", "13.JPG", "14.JPG", "15.JPG", "16.JPG", "17.JPG", "18.JPG", "19.JPG", "20.JPG", "21.JPG"];
+
+	const duplicatedImages = [...imageNames, ...imageNames, ...imageNames, ...imageNames, ...imageNames, ...imageNames, ...imageNames, ...imageNames, ...imageNames];
+	  
+
+
   return (
     <>
-      <section>
+      <section className="h-[100vh] max-w-[100vw]">
+		<div className="w-[100vw] overflow-hidden">
+	  <div className="marquee-container">
+          {duplicatedImages.map((image, index) => (
+            <img key={index} src={`/${image}`} alt={`Image ${index + 1}`} />
+          ))}
+        </div>
+		</div>
         <div
-          className="h-[100vh] flex z-[10] items-center relative"
+          className="flex z-[10] items-center relative"
           id="aboutus"
         >
+			
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <div className="text-center">
