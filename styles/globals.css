@@ -210,7 +210,7 @@ label {
 	animation: marquee 360s linear infinite;
 	white-space: nowrap;
 	padding: 40px;
-	padding-top: 0px;
+	padding-top: 8px;
 	width: 3000vw;
 	/*overflow: hidden;*/
   }
