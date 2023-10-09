@@ -20,7 +20,7 @@ const Contact = () => {
 				<textarea name="message" className="rounded-lg notonscreen delay-500" placeholder="Message" required />
 				{/*</textarea required>*/}
 
-				<input className="input rounded-lg notonscreen delay-700" type="submit" value="Submit"/>
+				<input className="input rounded-lg notonscreen delay-700 font-bold py-2 px-4 mt-4" type="submit" value="SUBMIT"/>
 
 			</form>
 		</div>

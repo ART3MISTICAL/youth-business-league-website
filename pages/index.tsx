@@ -11,6 +11,7 @@ import Vision from '@/components/vision'
 import What from '@/components/what'
 import Footer from '@/components/footer'
 import Contact from '@/components/contact'
+import Event from '@/components/event'
 
 export default function Home() {
 	const ref = useRef(null);
@@ -18,8 +19,6 @@ export default function Home() {
 	const options = {
 	  smooth: true,
 	}
-
-	const [isDesktop, setIsDesktop] = useState(true);
 
 
 	useEffect (() => {
@@ -33,20 +32,6 @@ export default function Home() {
 		const hiddenElements = document.querySelectorAll('.notonscreen');
 		hiddenElements.forEach(el => observer.observe(el));
 
-		const handleWindowResize = () => {
-			setIsDesktop(window.innerWidth >= 768);
-		  };
-	  
-		  // Add a listener to handle window resize events
-		  window.addEventListener("resize", handleWindowResize);
-	  
-		  // Call handleWindowResize on initial render
-		  handleWindowResize();
-	  
-		  return () => {
-			// Clean up the event listener on unmount
-			window.removeEventListener("resize", handleWindowResize);
-		  };
 	},[],)
 
 
@@ -90,15 +75,21 @@ export default function Home() {
 			<What />
 		</section>
 
-		<section className={`w-[100vw] flex justify-center items-center relative ${isDesktop ? "h-[100vh]" : "min-h-[80vh]"}`} id='contact'>
+		<section className="w-[100vw] min-h-[70vh] lg:h-[100vh] flex items-center justify-center" id='ybl2023'>
+			<Event />
+		</section>
+
+		<section className="w-[100vw] flex justify-center items-center min-h-[80vh] relative lg:h-[100vh]" id='contact'>
 			<Contact />
 			
 		</section>
 
+		
+		
+
 		<section>
 			<Footer />
 		</section>
-
 		
 		
 	</div>

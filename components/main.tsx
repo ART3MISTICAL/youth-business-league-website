@@ -5,12 +5,6 @@ import { IconButton } from "@material-tailwind/react";
 
 
 const Main = () => {
-	//const navbar = document.querySelector('.navbar');
-	//let classList = navbar?.classList;
-
-	//useEffect(() => {
-	//	classList?.add('bg-black');
-	//}, []);
 
 
 	return (

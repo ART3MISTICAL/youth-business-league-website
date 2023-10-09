@@ -60,16 +60,26 @@ export default function Example() {
           WHAT WE DO
         </a>
       </Typography>
-	  {/*<Typography
+	  <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal nnav notonscreen"
       >
-        <a href="#" className="flex items-center nav_link">
-          WHAT WE DO
+        <a href="#ybl2023" className="flex items-center nav_link" >
+          YBL 2023
         </a>
-      </Typography>*/}
+      </Typography>
+	  <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal nnav notonscreen"
+      >
+        <a href="#contact" className="flex items-center nav_link" >
+          CONTACT US
+        </a>
+      </Typography>
       
       
     </ul>

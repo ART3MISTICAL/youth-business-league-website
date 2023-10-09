@@ -171,15 +171,11 @@ textarea {
 
 input[type="submit"],
 .btn {
-	background: #4570f3;
-	color: #fff;
+	background: #F1C779;
+	color: black;
 	cursor: pointer;
 }
 
-input[type="submit"]:hover,
-.btn:hover {
-	background: #6c63e8;
-}
 
 label {
 	color: white;
